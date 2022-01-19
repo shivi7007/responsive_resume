@@ -1,0 +1,141 @@
+.main-content {
+                /*min-height: 1000px;*/
+                 width: 90%; 
+                /* margin: 20px auto; */
+                display: flex;
+                grid-template-columns: 300px 700px;
+                border: 1px solid black;
+            }
+            .social-media-div {
+                display: flex;
+                justify-content: center;
+            }
+            .left-section {
+                width: 45%;
+                grid-column: span 1;
+                background-color: black;
+                padding: 1rem;
+                color: white;
+            }
+            .right-section {
+                /*width: 90%;*/
+                grid-column: span 1/ span 2
+            }
+            .left-content{
+                padding: 1rem;
+            }
+            .profile-image{
+                width: 60%;
+                border: 5px white solid;
+                border-radius: 30%;
+                text-align: center;
+                display: block;
+                margin: auto;
+            }
+            .name{
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                padding: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 0.02px;
+                color: white;
+            }
+            .designation{
+                font-size: 1rem;
+                color: white;
+                text-align: center;
+                text-transform: uppercase;
+                padding-bottom: 0.5rem;
+            }
+            .description {
+                font-size: 0.75rem;
+                text-align:  center;
+                padding: 1rem;
+                color: white;
+            }
+            .social-media, .personal-details {
+                list-style: none;
+                color: white;
+                padding: 0;
+            }
+            .icon {
+                color: white;
+                display: inline-block;
+                padding: 0px 0.5rem;
+                /* border: 1px solid white; */
+            }
+            .icon1{
+                padding: 0.3rem 0rem;
+            }
+            .skill-item {
+                padding-bottom: 1rem;
+            }
+            .skills-title {
+                /* font-size: 0.75rem; */
+                text-align:  center;
+                padding: 1rem 0.5rem;
+                color: white;
+                text-transform: uppercase;
+            }
+            .skill-name{
+                /* font-size: 0.65rem; */
+                font-weight: 0.65rem;
+                text-align: left;
+                padding-bottom: 0.5rem;
+                text-transform: uppercase;
+            }
+            .progress-bar {
+                border: 1px solid white;
+                height: 2px;
+                background-color: white;
+            }
+            .right-main-content {
+                padding: 2rem 3rem;
+            }
+            .right-title {
+                width: 100%;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 700;
+                padding: 0.5rem;
+                letter-spacing: 1px;
+            }
+            .para{
+                padding: 0rem 0.5rem;
+                flex-wrap: wrap;
+            }
+            .experience-content, .education-content{
+                padding: 0rem 0.5rem;
+                margin: 1rem 0rem;
+            }
+            .cont-box{
+                display: flex;
+            }
+            .left-box{
+                width: 75%;
+                padding-bottom: 0.6rem;
+            }
+            .right-box{
+                width: auto;
+                padding-bottom: 0.6rem;
+            }
+                body{
+                    display: flex;
+                    justify-content: center;
+                    /*overflow: hidden;*/
+                }
+            /*@media screen and (max-width: 630px) {
+                .main-content{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }*/
+            @media screen and (max-width: 673px) {
+                .left-section {
+                    width: auto;
+                }
+                .main-content{
+                    grid-template-columns: repeat(1, 1fr);
+                    flex-direction: column;
+                }
+            }
