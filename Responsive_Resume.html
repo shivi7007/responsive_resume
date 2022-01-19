@@ -4,125 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <title>Demo js</title>
-        <style>
-            .main-content {
-                min-height: 1000px;
-                /* width: 90%; */
-                /* margin: 20px auto; */
-                display: grid;
-                grid-template-columns: 300px 1000px;
-                border: 1px solid black;
-            }
-            .left-section {
-                grid-column: span 1;
-                background-color: black;
-                padding: 1rem;
-                color: white;
-            }
-            .right-section {
-                width: 90%;
-                grid-column: span 1/ span 2
-            }
-            .left-content{
-                padding: 1rem;
-            }
-            .profile-image{
-                width: 60%;
-                border: 5px white solid;
-                border-radius: 30%;
-                text-align: center;
-                display: block;
-                margin: auto;
-            }
-            .name{
-                font-size: 1.2rem;
-                font-weight: 700;
-                text-align: center;
-                padding: 0.8rem;
-                text-transform: uppercase;
-                letter-spacing: 0.02px;
-                color: white;
-            }
-            .designation{
-                font-size: 1rem;
-                color: white;
-                text-align: center;
-                text-transform: uppercase;
-                padding-bottom: 0.5rem;
-            }
-            .description {
-                font-size: 0.75rem;
-                text-align:  center;
-                padding: 1rem;
-                color: white;
-            }
-            .social-media, .personal-details {
-                list-style: none;
-                color: white;
-                padding: 0;
-            }
-            .icon {
-                color: white;
-                display: inline-block;
-                padding: 0px 0.7rem;
-                /* border: 1px solid white; */
-            }
-            .icon1{
-                padding: 0.3rem 0rem;
-            }
-            .skill-item {
-                padding-bottom: 1rem;
-            }
-            .skills-title {
-                /* font-size: 0.75rem; */
-                text-align:  center;
-                padding: 1rem 0.5rem;
-                color: white;
-                text-transform: uppercase;
-            }
-            .skill-name{
-                /* font-size: 0.65rem; */
-                font-weight: 0.65rem;
-                text-align: left;
-                padding-bottom: 0.5rem;
-            }
-            .progress-bar {
-                border: 1px solid white;
-                height: 2px;
-                background-color: white;
-            }
-            .right-main-content {
-                padding: 2rem 3rem;
-            }
-            .right-title {
-                width: 100%;
-                text-transform: uppercase;
-                font-size: 1.2rem;
-                font-weight: 700;
-                padding: 0.5rem;
-                letter-spacing: 1px;
-            }
-            .para{
-                padding: 0rem 0.5rem;
-                flex-wrap: wrap;
-            }
-            .experience-content, .education-content{
-                padding: 0rem 0.5rem;
-                margin: 1rem 0rem;
-            }
-            .cont-box{
-                display: flex;
-            }
-            .left-box{
-                width: 65%;
-                padding-bottom: 0.6rem;
-            }
-            .right-box{
-                width: 35%;
-                padding-bottom: 0.6rem;
-            }
-        </style>
+		<link rel="stylesheet" href="responsive_resume.css" />
+		<title>Responsive Resume</title>
 	</head>
 	<body>
         <main class="main-content">
@@ -136,12 +19,14 @@
                         <p class="description">Full Stack Developer | Web Developer</p>
                     </div>
                     <div class="contact-item">
-                        <ul class="social-media">
-                            <li class="icon"> <i class="fab fa-linkedin-in"></i> </li>
-                            <li class="icon"> <i class="fab fa-github"></i> </li>
-                            <li class="icon"> <i class="fab fa-facebook-f"></i> </li>
-                            <li class="icon"> <i class="fab fa-twitter"></i> </li>
-                        </ul>
+                        <div class="social-media-div">
+                            <ul class="social-media">
+                                <li class="icon"> <i class="fab fa-linkedin-in"></i> </li>
+                                <li class="icon"> <i class="fab fa-github"></i> </li>
+                                <li class="icon"> <i class="fab fa-facebook-f"></i> </li>
+                                <li class="icon"> <i class="fab fa-twitter"></i> </li>
+                            </ul>
+                        </div>
                         <ul class="personal-details">
                             <li class="icon1"> <i class="fas fa-envelope"></i> <span>JohnDoe@fmail.com</span></li>
                             <li class="icon1"> <i class="fas fa-phone-alt"></i> <span>+91-9876543210</span></li>
